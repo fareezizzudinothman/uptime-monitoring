@@ -6,3 +6,6 @@ services:
       POSTGRES_DB: uptime_monitor
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres123
+
+      ports:
+      - "5432:5432"
