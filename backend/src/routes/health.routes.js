@@ -1,9 +1,8 @@
 const express = require("express");
-
 const router = express.Router();
 
-const { healthCheck } = require("../controllers/health.controller");
+const { checkDatabase } = require("../controllers/health.controller");
 
-router.get("/health", healthCheck);
+router.get("/db", checkDatabase);
 
 module.exports = router;
