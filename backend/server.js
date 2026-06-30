@@ -1,5 +1,7 @@
 const express = require("express");
 
+require("./src/config/database");
+
 const healthRoutes = require("./src/routes/health.routes")
 
 const app = express();
